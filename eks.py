@@ -51,6 +51,7 @@ service = client.V1Service(
 # Create the service
 api_instance = client.CoreV1Api(api_client)
 api_instance.create_namespaced_service(
-    namespace="default",
-    body=service
+    namespace = "default",
+    body = service
+
 )
